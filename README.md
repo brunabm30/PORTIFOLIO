@@ -1,37 +1,37 @@
 # PORTIFOLIO de Bruna Pereira Mota
 
-# SOBRE MIM
-Olá, meu nome é Bruna, e sou especialista em análise de dados.
+# About Me
+Hello, my name is Bruna, I'm especialist in Data Analysis.
 
-# Propósito do portifòlio
-Este repositório serve como portifólio profissional, destacando projetos selecionados que demonstrem minhas habilidades técnicas, criatividade e capacidade de colaboração. Cada projeto listado aqui é um testemunho do meu compromisso com a excelência na análise de dados.
+# Purpose
+This repo is for professional portfolio highlighting selected projects that shows my skills, creativity and collaboration. Each project is a demonstration of my commitment with excellence in Data Analysis.
 
-## Projetos em destaque
+## Main Projects 
 
-### Projeto 1: Projeto 6
-### Descrição: Usando DAX Para Análise de Dados de Data Warehouse.
-### Tecnologias: Powerbi, Excel.
+### Projecte 1: Olist ECOMMERCE & LOGISTICS ANALYTICS
+### Descriptions: End-to-end analysis of ecommerce operations, delivery performance and non-delivery patterns using SQL and POWER BI.
+### Tecnologies: POWER BI, SQL, POWER QUERY, POSTGREE SQL.
 ### 
 
-### Projeto 2: 
-### Descrição: 
-### Tecnologias: 
+### Project 2: Supply Chain Performance Dashboard
+### Description: Powerbi solution focused on logistics and supply chain indicators, preparation, modelling and KPI visualization.
+### Tecnologies: POWERBI, POWER QUERY, SQL, KPIs.
 ###
 
-### Projeto 3:
-### Descrição:
-### Tecnologias:
+### Project 3: Bronze, silver and gold data pipeline
+### Description: Layered data engineering architecture for ingestion, transformation and reliable downstream analytics. 
+### Tecnologies: PYTHON, DATABRICKS, SQL.
 ###
 
-### Habilidades
-Programação em python, Powerbi, excel, design de banco de dados em SQL, análise exploratória de dados.
+### Habilitys
+PYTHON, POWERBI, Excel, SQL, Data analysis, Databricks, Power QUERY.
 
-### Contato
+### Contact
 Linkedin: www.linkedin.com/in/bruna-mota-2b5673110
 E-MAIL: brunacorp30@gmail.com
 
-Para mais informações ou para discutir oportunidades de colaboração, sinta-se á vontade para entrar em contato.
+For more informations and oppportunitties feel free to contact.
 
-##Licença
+##License
 
-Este portifólio e todos os projetos incluídos estão sob licenças individuais. Consulte repositòrios específicos para detalhes de licenciamento.
+
