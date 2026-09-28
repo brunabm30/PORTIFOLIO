@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Data & AI Portfolio</title>
+<style>
+:root{--bg:#08111f;--card:#101f33;--text:#eef5ff;--muted:#aab8ca;--line:#20334c;--accent:#4da3ff;--max:1120px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:linear-gradient(180deg,var(--bg),#0a1524,var(--bg));color:var(--text);line-height:1.6}
+a{color:inherit;text-decoration:none}.container{width:min(92%,var(--max));margin:auto}
+nav{position:sticky;top:0;z-index:10;background:rgba(8,17,31,.86);backdrop-filter:blur(14px);border-bottom:1px solid #172941}
+.nav{height:70px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;letter-spacing:.05em}.brand span{color:var(--accent)}
+.links{display:flex;gap:25px;color:var(--muted);font-size:.9rem}.links a:hover{color:white}
+section{padding:90px 0}.hero{min-height:calc(100vh - 70px);display:flex;align-items:center}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:65px;align-items:center}
+.kicker{color:#7dd3fc;font-weight:800;text-transform:uppercase;letter-spacing:.14em;font-size:.76rem}
+h1{font-size:clamp(3.1rem,7vw,5.8rem);line-height:.96;letter-spacing:-.055em;margin:18px 0 24px}
+h1 span{color:var(--accent)}h2{font-size:clamp(2rem,4vw,3.2rem);line-height:1.05;letter-spacing:-.035em;margin:10px 0 14px}
+.lead{font-size:1.18rem;color:var(--muted);max-width:700px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{padding:12px 19px;border-radius:10px;border:1px solid var(--line);font-weight:700;display:inline-block}
+.primary{background:var(--accent);color:#06101d;border-color:var(--accent)}
+.card,.project,.panel{background:var(--card);border:1px solid var(--line);border-radius:18px}
+.hero-card{padding:28px;background:linear-gradient(145deg,rgba(77,163,255,.14),var(--card));box-shadow:0 20px 60px #0004}
+.metric{font-size:2rem;font-weight:800;color:#7dd3fc}.muted{color:var(--muted)}
+.mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}.mini{padding:16px;border:1px solid #ffffff0b;border-radius:13px;background:#ffffff08}
+.head{max-width:760px;margin-bottom:38px}.head p{color:var(--muted)}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:22px}.panel{padding:28px}.panel p{color:var(--muted);margin-top:10px}
+.tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}.tag{padding:7px 11px;border:1px solid var(--line);border-radius:999px;color:#dce8f7;font-size:.86rem;background:#ffffff04}
+.projects{display:grid;grid-template-columns:1fr 1fr;gap:20px}.project{padding:27px;min-height:300px;display:flex;flex-direction:column;transition:.2s}.project:hover{transform:translateY(-4px);border-color:#31557b}.project-link{position:relative;color:inherit;cursor:pointer}.project-link:hover{transform:translateY(-5px);border-color:var(--accent)}.view-project{display:block;margin-top:18px;color:var(--accent);font-weight:800;font-size:.9rem}.project-details{display:grid;gap:18px;margin-top:28px}.detail-card{background:linear-gradient(145deg,#12243a,#0e1c2e);border:1px solid var(--line);border-radius:18px;padding:28px;scroll-margin-top:95px}.detail-card:target{border-color:var(--accent);box-shadow:0 0 0 2px #4da3ff22}.detail-card h3{font-size:1.45rem;margin:9px 0 15px}.detail-card p{color:var(--muted);margin:8px 0}.detail-card b{color:var(--text)}
+.num{font-size:.72rem;color:var(--accent);font-weight:800;letter-spacing:.12em}.project h3{font-size:1.3rem;margin:11px 0}.project p{color:var(--muted)}.project .tags{margin-top:auto}
+.jobs{display:grid}.job{display:grid;grid-template-columns:220px 1fr;gap:28px;padding:24px 0;border-top:1px solid var(--line)}.job:first-child{border-top:0}
+.date{color:#7dd3fc;font-weight:700;font-size:.85rem}.company{color:var(--muted);margin:3px 0 10px}.job ul{padding-left:18px;color:var(--muted)}
+.contact{text-align:center;padding:65px 25px;background:linear-gradient(145deg,rgba(77,163,255,.12),var(--card));border:1px solid var(--line);border-radius:22px}.contact p{color:var(--muted);max-width:650px;margin:auto}
+footer{padding:32px 0;border-top:1px solid var(--line);color:#7f90a5;font-size:.84rem}.foot{display:flex;justify-content:space-between;gap:20px}
+@media(max-width:800px){.links{display:none}.hero-grid,.about,.projects{grid-template-columns:1fr}.job{grid-template-columns:1fr;gap:7px}section{padding:65px 0}.foot{flex-direction:column}}
+</style>
+</head>
+<body>
+<nav><div class="container nav">
+<a class="brand" href="#home">DATA<span>&</span>AI</a>
+<div class="links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div>
+</div></nav>
+
+<section id="home" class="hero"><div class="container hero-grid">
+<div>
+<div class="kicker">Data Analytics · BI · Data Engineering · AI</div>
+<h1>Turning data into <span>decisions.</span></h1>
+<p class="lead">Data & AI professional focused on transforming complex data into actionable insights, automated workflows, business intelligence dashboards and AI-powered solutions.</p>
+<div class="actions"><a class="btn primary" href="#projects">Explore my projects</a><a class="btn" href="#contact">Let's connect</a></div>
+</div>
+<div class="hero-card">
+<div class="metric">Data → Insight → Action</div><p class="muted">A practical approach combining analytics, engineering, automation and AI.</p>
+<div class="mini-grid"><div class="mini"><b>BI</b><p class="muted">Dashboards & KPIs</p></div><div class="mini"><b>SQL</b><p class="muted">Analysis & modeling</p></div><div class="mini"><b>Python</b><p class="muted">ETL & automation</p></div><div class="mini"><b>AI</b><p class="muted">RAG & assistants</p></div></div>
+</div>
+</div></section>
+
+<section id="about"><div class="container">
+<div class="head"><div class="kicker">About</div><h2>From business questions to data solutions.</h2><p>I work across the data lifecycle — from extracting and transforming information to building dashboards, identifying patterns and developing automation and AI solutions.</p></div>
+<div class="about">
+<div class="panel"><h3>What I do</h3><p>I combine analytical thinking with practical technology to help organizations organize their data, monitor performance and improve decision-making.</p><div class="tags"><span class="tag">Data Analysis</span><span class="tag">Business Intelligence</span><span class="tag">Data Engineering</span><span class="tag">Automation</span><span class="tag">AI Solutions</span></div></div>
+<div class="panel"><h3>My approach</h3><p>Understand the business problem → structure the data → build reliable pipelines → analyze the information → communicate insights → automate repetitive work.</p><div class="tags"><span class="tag">Business-focused</span><span class="tag">Data-driven</span><span class="tag">Scalable</span></div></div>
+</div></div></section>
+
+<section id="projects"><div class="container">
+<div class="head"><div class="kicker">Selected Projects</div><h2>Projects that show the full data journey.</h2><p>Technical projects presented with a clear business objective.</p></div>
+<div class="projects">
+<a class="project project-link" href="#project-olist"><div class="num">01 · ANALYTICS & BI</div><h3>Olist E-commerce & Logistics Analytics</h3><p>End-to-end analysis of e-commerce operations, delivery performance and non-delivery patterns, using SQL and Power BI.</p><div class="tags"><span class="tag">PostgreSQL</span><span class="tag">SQL</span><span class="tag">Power BI</span><span class="tag">Power Query</span></div><span class="view-project">View project →</span></a>
+<a class="project project-link" href="#project-supply"><div class="num">02 · SUPPLY CHAIN</div><h3>Supply Chain Performance Dashboard</h3><p>Power BI solution focused on logistics and supply chain indicators, preparation, modeling and KPI visualization.</p><div class="tags"><span class="tag">Power BI</span><span class="tag">Power Query</span><span class="tag">SQL</span><span class="tag">KPIs</span></div><span class="view-project">View project →</span></a>
+<a class="project project-link" href="#project-engineering"><div class="num">03 · DATA ENGINEERING</div><h3>Bronze–Silver–Gold Data Pipeline</h3><p>Layered data engineering architecture for ingestion, transformation and reliable downstream analytics.</p><div class="tags"><span class="tag">Python</span><span class="tag">Databricks</span><span class="tag">Delta</span><span class="tag">SQL</span></div><span class="view-project">View project →</span></a>
+<a class="project project-link" href="#project-rag"><div class="num">04 · GENERATIVE AI</div><h3>AI Business Assistant with RAG</h3><p>Intelligent assistant concept that retrieves information from a knowledge base and generates contextual answers.</p><div class="tags"><span class="tag">Python</span><span class="tag">RAG</span><span class="tag">LLM</span><span class="tag">Vector DB</span></div><span class="view-project">View project →</span></a>
+<a class="project project-link" href="#project-automation"><div class="num">05 · AUTOMATION</div><h3>Data Automation Workflow</h3><p>Automated workflow connecting data sources, processing routines and reporting layers to reduce repetitive work.</p><div class="tags"><span class="tag">Python</span><span class="tag">n8n</span><span class="tag">APIs</span><span class="tag">SQL</span></div><span class="view-project">View project →</span></a>
+</div>
+<div class="project-details">
+<article id="project-olist" class="detail-card"><div class="num">PROJECT 01</div><h3>Olist E-commerce & Logistics Analytics</h3><p><b>Problem:</b> Understand delivery performance and identify patterns behind non-delivered orders.</p><p><b>Approach:</b> Data preparation, PostgreSQL analysis, KPI calculation and Power BI visualization.</p><p><b>Key outputs:</b> Delivery indicators, non-delivery analysis, geographic patterns and operational insights.</p></article>
+<article id="project-supply" class="detail-card"><div class="num">PROJECT 02</div><h3>Supply Chain Performance Dashboard</h3><p><b>Objective:</b> Create a clear operational view of logistics and supply chain performance.</p><p><b>Approach:</b> Power Query transformation, SQL/data modeling and interactive KPI dashboards.</p><p><b>Key outputs:</b> Performance monitoring, management indicators and decision-support views.</p></article>
+<article id="project-engineering" class="detail-card"><div class="num">PROJECT 03</div><h3>Bronze–Silver–Gold Data Pipeline</h3><p><b>Objective:</b> Build a structured data flow from raw ingestion to analytics-ready datasets.</p><p><b>Architecture:</b> Bronze for raw data, Silver for transformed and validated data, and Gold for business-ready datasets.</p><p><b>Technologies:</b> Python, Databricks, Delta and SQL.</p></article>
+<article id="project-rag" class="detail-card"><div class="num">PROJECT 04</div><h3>AI Business Assistant with RAG</h3><p><b>Objective:</b> Create an assistant capable of answering business questions using trusted company knowledge.</p><p><b>Architecture:</b> Documents → embeddings → vector database → retrieval → LLM → contextual response.</p><p><b>Technologies:</b> Python, RAG, LLMs, vector database and WhatsApp API.</p></article>
+<article id="project-automation" class="detail-card"><div class="num">PROJECT 05</div><h3>Data Automation Workflow</h3><p><b>Objective:</b> Reduce repetitive manual work in data collection, processing and reporting.</p><p><b>Approach:</b> Connect APIs and data sources, process information automatically and deliver structured outputs.</p><p><b>Technologies:</b> Python, n8n, APIs and SQL.</p></article>
+</div></div></div></section>
+
+<section id="skills"><div class="container">
+<div class="head"><div class="kicker">Technical Skills</div><h2>Tools for building data solutions.</h2></div>
+<div class="panel"><div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">PostgreSQL</span><span class="tag">Power BI</span><span class="tag">Power Query</span><span class="tag">Excel</span><span class="tag">Google Sheets</span><span class="tag">BigQuery</span><span class="tag">Databricks</span><span class="tag">Delta Lake</span><span class="tag">ETL / ELT</span><span class="tag">Data Modeling</span><span class="tag">APIs</span><span class="tag">Docker</span><span class="tag">Git / GitHub</span><span class="tag">n8n</span><span class="tag">Machine Learning</span><span class="tag">RAG</span><span class="tag">LLMs</span><span class="tag">Data Storytelling</span><span class="tag">KPI Development</span></div></div>
+</div></section>
+
+<section id="experience"><div class="container">
+<div class="head"><div class="kicker">Experience</div><h2>Professional experience.</h2></div>
+<div class="jobs">
+<div class="job"><div class="date">FEB 2026 — PRESENT</div><div><h3>Business Data Consultant</h3><div class="company">Data & Business Intelligence</div><ul><li>Developed and supported Power BI dashboards for operational and supply chain analysis.</li><li>Worked with data preparation, transformation, modeling and KPI development.</li><li>Supported data-driven management through structured reporting and analysis.</li></ul></div></div>
+<div class="job"><div class="date">MAY 2024 — MAY 2025</div><div><h3>Data Analyst</h3><div class="company">Analytics & Operations</div><ul><li>Extracted, processed and analyzed data to generate actionable insights.</li><li>Created and monitored performance indicators for operational efficiency.</li><li>Mapped processes and supported improvement initiatives with data.</li></ul></div></div>
+<div class="job"><div class="date">2023 — 2024</div><div><h3>Sales Development Representative</h3><div class="company">Commercial Operations</div><ul><li>Managed CRM information, customer data and performance indicators.</li><li>Prepared Excel reports and presented performance analysis.</li><li>Used data to support commercial opportunity and performance strategies.</li></ul></div></div>
+</div></div></section>
+
+<section id="contact"><div class="container"><div class="contact">
+<div class="kicker">Contact</div><h2>Let's build something with data.</h2>
+<p>Open to Data Analytics, Business Intelligence, Data Engineering, Automation and AI projects.</p>
+<div class="actions" style="justify-content:center">
+<a class="btn primary" href="mailto:brunacorp30@gmail.com">brunacorp30@gmail.com</a>
+<a class="btn" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+<a class="btn" href="https://github.com/brunabm30" target="_blank" rel="noopener">GitHub</a>
+</div></div></div></section>
+
+<footer><div class="container foot"><span>© 2026 Data & AI Portfolio</span><span>Built with HTML, CSS & a data-driven mindset.</span></div></footer>
+</body></html>
